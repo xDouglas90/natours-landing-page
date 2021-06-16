@@ -67,7 +67,7 @@ body {
 .header__heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom: 4.375rem;
   backface-visibility: hidden;
 }
 .heading-primary-main,
@@ -76,29 +76,29 @@ body {
 }
 
 .heading-primary-main {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
-  letter-spacing: 28px;
+  letter-spacing: 1.75rem;
 
   animation: moveInLeft 1s ease-out;
 }
 
 .heading-primary-sub {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 18px;
-  margin-left: -17px;
+  letter-spacing: 1.125rem;
+  margin-left: -1.063rem;
   animation: moveInRight 1s ease-out;
 }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-6.25rem);
   }
 
   80% {
-    transform: translateX(15px);
+    transform: translateX(0.938rem);
   }
 
   100% {
@@ -110,11 +110,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(6.25rem);
   }
 
   80% {
-    transform: translateX(-15px);
+    transform: translateX(-0.938rem);
   }
 
   100% {
@@ -126,22 +126,22 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 40px;
+  padding: 0.938rem 2.5rem;
   transition: all 0.2s;
   position: relative;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.188rem);
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-0.063rem);
+  box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.4);
 }
 
 .header__btn {
@@ -154,7 +154,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -178,7 +178,7 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(2.5rem);
   }
 
   100% {
