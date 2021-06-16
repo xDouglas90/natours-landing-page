@@ -1,6 +1,25 @@
+/* ===================
+    Global
+====================== */
+
 /* Variables */
 :root {
   --light-green: #7ed56f;
   --medium-green: #55c57a;
   --dark-green: #28b485;
+}
+
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #777;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
 }
