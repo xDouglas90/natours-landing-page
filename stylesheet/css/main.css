@@ -38,6 +38,17 @@ body {
   background-size: cover;
 
   height: 95vh;
+  position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+
+.logo-box-img {
+  height: 35px;
 }
