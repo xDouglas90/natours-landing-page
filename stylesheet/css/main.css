@@ -10,13 +10,20 @@
 }
 
 /* Reset CSS */
-* {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
+  box-sizing: border-box;
   color: #777;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
@@ -51,7 +58,7 @@ body {
   left: 2.5rem;
 }
 
-.logo-box-img {
+.header__logo {
   height: 35px;
 }
 
@@ -64,18 +71,18 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.header__heading-primary {
+.heading-primary {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 4.375rem;
   backface-visibility: hidden;
 }
-.heading-primary-main,
-.heading-primary-sub {
+.heading-primary--main,
+.heading-primary--sub {
   display: block;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   font-size: 3.75rem;
   font-weight: 400;
   letter-spacing: 1.75rem;
@@ -83,7 +90,7 @@ body {
   animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 1.125rem;
@@ -144,7 +151,7 @@ body {
   box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.4);
 }
 
-.header__btn {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
@@ -162,8 +169,8 @@ body {
   transition: all 0.4s;
 }
 
-.header__btn::after {
-  background-color: #fff;  
+.btn--white::after {
+  background-color: #fff;
 }
 
 .btn:hover::after {
@@ -171,7 +178,7 @@ body {
   opacity: 0;
 }
 
-.header__btn--animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
 }
 
