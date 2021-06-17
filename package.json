@@ -1,0 +1,23 @@
+{
+  "name": "natours-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xDouglas90/natours-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xDouglas90/natours-landing-page/issues"
+  },
+  "homepage": "https://github.com/xDouglas90/natours-landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
