@@ -29,18 +29,18 @@
     z-index: -1;
     transition: all 0.4s;
   }
-}
 
-.btn--white {
-  background-color: var(--color-white);
-  color: var(--color-grey-dark);
-  &::after {
+  &--white {
     background-color: var(--color-white);
+    color: var(--color-grey-dark);
+    &::after {
+      background-color: var(--color-white);
+    }
   }
-}
-
-.btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s backwards;
+  
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s backwards;
+  }
 }
 
 @include moveInY(Bottom, 40, 0);
