@@ -22,30 +22,6 @@
     text-align: center;
     transform: translate(-50%, -50%);
   }
-
-  .heading-primary {
-    color: var(--color-white);
-    text-transform: uppercase;
-    margin-bottom: 4.375rem;
-    backface-visibility: hidden;
-    &--main,
-    &--sub {
-      display: block;
-    }
-    &--main {
-      font-size: 3.75rem;
-      font-weight: 400;
-      letter-spacing: 1.75rem;
-      animation: moveInLeft 1s ease-out;
-    }
-    &--sub {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: 1.125rem;
-      margin-left: -1.063rem;
-      animation: moveInRight 1s ease-out;
-    }
-  }
 }
 
 @include moveInX(Left, -100, 15, 0);
