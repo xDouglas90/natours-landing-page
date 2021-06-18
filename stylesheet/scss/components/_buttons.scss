@@ -44,3 +44,29 @@
 }
 
 @include moveInY(Bottom, 40, 0);
+
+
+.btn-text {
+  &:link,
+  &:visited {
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    display: inline-block;
+    font-size: var(--default-font-size);
+    padding: toRem(4);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    color: var(--color-white);
+    transform: translateY(toRem(-2));
+  }
+
+  &:active {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+  }
+}
