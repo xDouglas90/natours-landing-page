@@ -8,7 +8,10 @@ $color-grey-light-1: rgb(247, 247, 247);
 $color-grey-dark: rgb(119, 119, 119);
 $color-white: rgb(255, 255, 255);
 
+// Fonts
+$default-font-size: 1.5rem;
+
 // Grid
-$grid-width: toRem(1140);
+$grid-width: toRem(1440);
 $gutter-vertical: toRem(80);
 $gutter-horizontal: toRem(60);
