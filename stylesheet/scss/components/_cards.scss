@@ -50,7 +50,7 @@
   &__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: color;
+    background-blend-mode: soft-light;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
@@ -129,6 +129,39 @@
         }
 
       }
+    }
+  }
+
+  // Back side styling
+  &__cta {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  &__price-box {
+    color: var(--color-white);
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+
+  &__price-only {
+    
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 300;
+
+    &--cents{
+      position: absolute;
+      top: 54px;
+      font-size: large;
     }
   }
 }
