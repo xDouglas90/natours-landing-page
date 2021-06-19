@@ -51,6 +51,8 @@
     background-size: cover;
     height: 23rem;
     background-blend-mode: soft-light;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
