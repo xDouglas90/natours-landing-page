@@ -3,3 +3,18 @@
   margin-top: -20vh;
   padding: 25rem 0;
 }
+
+.section-features {
+  background: linear-gradient(135deg, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)),
+    url(../../../assets/natureza-4.jpg) no-repeat top;
+  background-size: cover;
+  height: 95vh;
+  // position: relative;
+  // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  padding: 20rem 0;
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
