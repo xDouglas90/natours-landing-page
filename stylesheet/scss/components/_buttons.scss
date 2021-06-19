@@ -37,6 +37,14 @@
       background-color: var(--color-white);
     }
   }
+
+  &--green {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    &::after {
+      background-color: var(--primary-color);
+    }
+  }
   
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s backwards;
