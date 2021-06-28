@@ -1,8 +1,13 @@
 // Header White Button
 .btn {
+  &,
   &:link,
   &:visited {
     @extend %white-btn-ph;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     transform: translateY(-0.188rem);
@@ -12,7 +17,9 @@
       opacity: 0;
     }
   }
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.063rem);
     box-shadow: 0 0.313rem 0.625rem rgba(0, 0, 0, 0.4);
   }
