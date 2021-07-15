@@ -7,7 +7,19 @@
 }
 
 html {
-  font-size: 65.5%;
+  font-size: 65.5%; // 10px
+
+  @include respond(tablet-port) {
+    font-size: 50%; // 8px
+  }
+
+  @include respond(tablet-land) {
+    font-size: 56.25%; // 9px
+  }
+  
+  @include respond(big-screen) {
+    font-size: 80%; // 12px
+  }
 }
 
 body {
