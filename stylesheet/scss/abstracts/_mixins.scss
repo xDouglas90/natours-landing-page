@@ -1,14 +1,14 @@
-@mixin moveInX ($direction, $initX, $midX, $finalX) {
+@mixin moveInX($direction, $initX, $midX, $finalX) {
   @keyframes moveIn#{$direction} {
     0% {
       opacity: 0;
       transform: translateX(toRem($initX));
     }
-  
+
     80% {
       transform: translateX(toRem($midX));
     }
-  
+
     100% {
       opacity: 1;
       transform: translateX(toRem($finalX));
@@ -16,13 +16,13 @@
   }
 }
 
-@mixin moveInY ($topBottom, $initY, $finalY) {
+@mixin moveInY($topBottom, $initY, $finalY) {
   @keyframes moveIn#{$topBottom} {
     0% {
       opacity: 0;
       transform: translateY(toRem($initY));
     }
-  
+
     100% {
       opacity: 1;
       transform: translateX(toRem($finalY));
@@ -43,4 +43,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { // 600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-port {
+    @media (max-width: 56.25em) { // 900px
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-land {
+    @media (max-width: 75em) { // 1200px
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-screen {
+    @media (min-width: 112.5em) { // 1800px
+      @content;
+    }
+  }
 }
