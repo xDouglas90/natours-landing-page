@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="stylesheet/css/icon-fonts.css" />
     <link rel="stylesheet" href="stylesheet/css/main.css" />
 
-    <title>Passeios emocionantes para pessoas aventureiras | Natours</title>
+    <title>Natours | Passeios emocionantes para pessoas aventureiras</title>
   </head>
   <body>
     <!-- Navigation -->
@@ -118,14 +118,40 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
-              <figure>
-                <img
-                  src="assets/natureza-1-grande.jpg"
-                  alt="Foto 1"
-                  class="composition__photo composition__photo--p1"
-                />
-              </figure>
-              <figure>
+              <img
+                srcset="
+                  assets/natureza-1.jpg        300w,
+                  assets/natureza-1-grande.jpg 100w
+                "
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                alt="Foto 1"
+                class="composition__photo composition__photo--p1"
+                src="assets/natureza-1-grande.jpg"
+              />
+
+              <img
+                srcset="
+                  assets/natureza-2.jpg        300w,
+                  assets/natureza-2-grande.jpg 100w
+                "
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                alt="Foto 2"
+                class="composition__photo composition__photo--p2"
+                src="assets/natureza-2-grande.jpg"
+              />
+
+              <img
+                srcset="
+                  assets/natureza-3.jpg        300w,
+                  assets/natureza-3-grande.jpg 100w
+                "
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                alt="Foto 3"
+                class="composition__photo composition__photo--p3"
+                src="assets/natureza-3-grande.jpg"
+              />
+
+              <!-- <figure>
                 <img
                   src="assets/natureza-2-grande.jpg"
                   alt="Foto 2"
@@ -138,7 +164,7 @@
                   alt="Foto 3"
                   class="composition__photo composition__photo--p3"
                 />
-              </figure>
+              </figure> -->
             </div>
           </div>
         </div>
@@ -460,6 +486,7 @@
           <img
             srcset="assets/logo-verde-1x.png 1x, assets/logo-verde-2x 2x.png"
             alt="Footer Logo"
+            src="assets/logo-verde-2x"
           />
         </picture>
       </div>
