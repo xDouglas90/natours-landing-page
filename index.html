@@ -21,21 +21,37 @@
   <body>
     <!-- Navigation -->
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
 
       <label class="navigation__btn" for="nav-toggle">
         <span class="navigation__icon">&nbsp;</span>
       </label>
 
-      <div class="navigation__bg">&nbsp;</div> 
+      <div class="navigation__bg">&nbsp;</div>
 
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Sobre a Natours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Seus Benefícios</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Passeios Populares</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Depoimentos</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Reserve Já</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>Sobre a Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Seus Benefícios</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Passeios Populares</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Depoimentos</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Reserve Já</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -433,23 +449,43 @@
     <!-- Footer begins -->
     <footer class="footer">
       <div class="footer__logo-box">
-        <a href="#"><img src="assets/logo-verde-2x.png" alt="Footer Logo" class="footer__logo"></a>
+        <a href="#">
+          <img
+            srcset="assets/logo-verde-1x.png 1x, assets/logo-verde-2x 2x.png"
+            alt="Footer Logo"
+            class="footer__logo"
+          />
+        </a>
       </div>
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__nav">
             <ul class="footer__list">
-              <li class="footer__item"><a href="" class="footer__link">Empresa</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Contato</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Trabalhe Conosco</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Política de Privacidade</a></li>
-              <li class="footer__item"><a href="" class="footer__link">Termos</a></li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Empresa</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Contato</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Trabalhe Conosco</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Política de Privacidade</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Termos</a>
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built by JONAS SCHMEDTMANN for his online course ADVANCED CSS AND SASS. Copyright © by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+            Built by JONAS SCHMEDTMANN for his online course ADVANCED CSS AND
+            SASS. Copyright © by Jonas Schmedtmann. You are 100% allowed to use
+            this webpage for both personal and commercial use, but NOT to claim
+            it as your own design. A credit to the original author, Jonas
+            Schmedtmann, is of course highly appreciated!
           </p>
         </div>
       </div>
@@ -458,14 +494,35 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="./assets/natureza-8.jpg" alt="Foto passeio" class="popup__img">
-          <img src="./assets/natureza-9.jpg" alt="Foto passeio" class="popup__img">
+          <img
+            src="./assets/natureza-8.jpg"
+            alt="Foto passeio"
+            class="popup__img"
+          />
+          <img
+            src="./assets/natureza-9.jpg"
+            alt="Foto passeio"
+            class="popup__img"
+          />
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>
           <h2 class="heading-secondary u-margin-bt-sm">Faça sua reserva já</h2>
-          <h3 class="heading-tertiary u-margin-bt-md">Importante &ndash; por favor, leia estes termos antes de reservar</h3>
-          <p class="popup__text u-margin-bt-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in nisl finibus, lacinia tortor ut, volutpat quam. Mauris vulputate quam odio, a condimentum est dictum id. Nam vel dui interdum, sagittis augue sed, convallis lectus. Sed in nunc ante. Phasellus egestas lorem sit amet lacus elementum gravida. Morbi rhoncus tellus nec arcu commodo consectetur. Vestibulum semper sagittis dui. Duis cursus lectus et efficitur imperdiet. Morbi sed gravida lectus, ut hendrerit leo. Etiam dignissim purus et risus tincidunt, ut suscipit nunc efficitur. Sed nec odio et ante accumsan gravida. Donec ut dolor ante. Ut ut leo eu sem blandit auctor at a eros.</p>
+          <h3 class="heading-tertiary u-margin-bt-md">
+            Importante &ndash; por favor, leia estes termos antes de reservar
+          </h3>
+          <p class="popup__text u-margin-bt-md">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+            nisl finibus, lacinia tortor ut, volutpat quam. Mauris vulputate
+            quam odio, a condimentum est dictum id. Nam vel dui interdum,
+            sagittis augue sed, convallis lectus. Sed in nunc ante. Phasellus
+            egestas lorem sit amet lacus elementum gravida. Morbi rhoncus tellus
+            nec arcu commodo consectetur. Vestibulum semper sagittis dui. Duis
+            cursus lectus et efficitur imperdiet. Morbi sed gravida lectus, ut
+            hendrerit leo. Etiam dignissim purus et risus tincidunt, ut suscipit
+            nunc efficitur. Sed nec odio et ante accumsan gravida. Donec ut
+            dolor ante. Ut ut leo eu sem blandit auctor at a eros.
+          </p>
           <a href="#" class="btn btn--green">Reserve já</a>
         </div>
       </div>
