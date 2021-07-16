@@ -149,13 +149,17 @@
     color: var(--color-white);
   }
 
+  &__price-only {
+    font-size: 2rem;
+  }
+
   &__price-value {
     font-size: 6rem;
     font-weight: 300;
 
     &--cents {
       position: absolute;
-      top: 54px;
+      top: 87px;
       font-size: large;
     }
   }
