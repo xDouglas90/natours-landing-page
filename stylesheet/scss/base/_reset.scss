@@ -10,11 +10,7 @@ html {
   font-size: 65.5%; // 10px
 
   @include respond(tablet-land) {
-    font-size: 56.25%; // 9px
-  }
-
-  @include respond(tablet-port) {
-    font-size: 50%; // 8px
+    font-size: 54.25%; // 9px
   }
 
   @include respond(big-screen) {

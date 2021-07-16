@@ -15,6 +15,7 @@
       position: relative;
       width: 33.33333333%;
       box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+      outline-offset: 1.2rem;
     }
 
     &--p1 {
@@ -54,7 +55,11 @@
       outline: 1.5rem solid var(--primary-color);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
       transform: scale(1.1) translateX(2rem);
-      z-index: 4;      
+      z-index: 4;
+      
+      @include respond(tablet-port) {
+        z-index: 1000;
+      }
     }
   }
 
