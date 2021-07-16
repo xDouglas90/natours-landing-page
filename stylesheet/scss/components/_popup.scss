@@ -22,11 +22,19 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @include respond(tablet-port) {
+      width: 90%;
+    }
   }
 
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include respond(tablet-port) {
+      display: none;
+    }
   }
 
   &__right {
@@ -39,6 +47,11 @@
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(tablet-port) {
+      display: none;
+      width: 0;
+    }
   }
 
   &__text {

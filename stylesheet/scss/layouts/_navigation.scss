@@ -14,6 +14,11 @@
     z-index: 2000;
     text-align: center;
     cursor: pointer;
+
+    @include respond(tablet-port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
   &__bg {
     height: 6.5rem;
@@ -25,6 +30,11 @@
     background-image: radial-gradient(var(--primary-color-light), var(--primary-color-dark));
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  
+    @include respond(tablet-port) {
+      top: 3.3rem;
+      right: 3.3rem;
+    }
   }
   &__nav {
     height: 100vh;

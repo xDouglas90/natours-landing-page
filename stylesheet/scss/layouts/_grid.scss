@@ -4,6 +4,14 @@
   
   &:not(:last-child) {
     margin-bottom: var(--gutter-vertical);
+  
+    @include respond(tablet-port) {
+      margin-bottom: var(--gutter-vertical-sm);
+    }
+  }
+
+  @include respond(tablet-port) {
+    max-width: 50rem;
   }
 
   @include clearFix;
@@ -13,6 +21,15 @@
 
     &:not(:last-child) {
       margin-right: var(--gutter-horizontal);
+    
+      @include respond(tablet-port) {
+        margin-right: 0;
+        margin-bottom: var(--gutter-vertical-sm);
+      }
+    }
+
+    @include respond(tablet-port) {
+      width: 100% !important;
     }
   }
 

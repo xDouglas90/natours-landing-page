@@ -2,6 +2,14 @@
   padding: 6rem;
   width: 50%;
 
+  @include respond(tablet-land) {
+    width: 80%;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -17,6 +25,10 @@
     padding: 1.5rem 2rem;
     width: 85%;
     transition: all 0.3s;
+
+    @include respond(tablet-port) {
+      width: 100%;
+    }
 
     &:focus {
       border-bottom: 3px solid var(--primary-color);
@@ -51,6 +63,11 @@
   &__radio-group {
     display: inline-block;
     width: 49%;
+
+    @include respond(tablet-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-label {
