@@ -449,13 +449,19 @@
     <!-- Footer begins -->
     <footer class="footer">
       <div class="footer__logo-box">
-        <a href="#">
+        <picture class="footer__logo">
+          <source
+            srcset="
+              assets/logo-verde-pequena-1x.png 1x,
+              assets/logo-verde-pequena-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
           <img
             srcset="assets/logo-verde-1x.png 1x, assets/logo-verde-2x 2x.png"
             alt="Footer Logo"
-            class="footer__logo"
           />
-        </a>
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
