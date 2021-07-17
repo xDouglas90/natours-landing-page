@@ -2,6 +2,10 @@
   background-color: var(--color-grey-light-1);
   margin-top: -20vh;
   padding: 23rem 0;
+
+  @include respond(tablet-port) {
+    padding: 28rem 0;
+  }
 }
 
 .section-features {
