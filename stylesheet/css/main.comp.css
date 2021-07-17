@@ -927,7 +927,7 @@ body {
   padding: 23rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 28rem 0; } }
+      padding: 28rem 0 21rem 0; } }
 
 .section-features {
   background: linear-gradient(135deg, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)), url(../../../assets/natureza-4.jpg) no-repeat top;
