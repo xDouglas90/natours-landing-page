@@ -11,9 +11,9 @@
     height: 95vh;
   }
 
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-    (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
     background: linear-gradient(135deg, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8)),
       url(../../../assets/hero.jpg) no-repeat top;
   }
