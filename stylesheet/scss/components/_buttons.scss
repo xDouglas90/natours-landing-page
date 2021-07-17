@@ -58,7 +58,7 @@
   }
 }
 
-@include moveInY(Bottom, 40, 0);
+@include moveInY(Bottom, 2.5rem, 0);
 
 
 .btn-text {
@@ -68,7 +68,7 @@
     color: var(--primary-color);
     display: inline-block;
     font-size: var(--default-font-size);
-    padding: toRem(4);
+    padding: 0.25rem;
     text-decoration: none;
     transition: all 0.2s;
   }
@@ -77,7 +77,7 @@
     background-color: var(--primary-color);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     color: var(--color-white);
-    transform: translateY(toRem(-2));
+    transform: translateY(-0.125rem);
   }
 
   &:active {

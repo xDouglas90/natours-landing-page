@@ -42,5 +42,5 @@
   }
 }
 
-@include moveInX(Left, -100, 15, 0);
-@include moveInX(Right, 100, -15, 0);
+@include moveInX(Left, -6.25rem, 0.938rem, 0);
+@include moveInX(Right, 6.25rem, -0.938rem, 0);

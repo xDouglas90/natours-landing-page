@@ -2,16 +2,16 @@
   @keyframes moveIn#{$direction} {
     0% {
       opacity: 0;
-      transform: translateX(toRem($initX));
+      transform: translateX($initX);
     }
 
     80% {
-      transform: translateX(toRem($midX));
+      transform: translateX($midX);
     }
 
     100% {
       opacity: 1;
-      transform: translateX(toRem($finalX));
+      transform: translateX($finalX);
     }
   }
 }
@@ -20,12 +20,12 @@
   @keyframes moveIn#{$topBottom} {
     0% {
       opacity: 0;
-      transform: translateY(toRem($initY));
+      transform: translateY($initY);
     }
 
     100% {
       opacity: 1;
-      transform: translateX(toRem($finalY));
+      transform: translateX($finalY);
     }
   }
 }

@@ -51,7 +51,7 @@ body {
     var(--primary-color-light), 
     var(--primary-color-dark)
   );
-  letter-spacing: toRem(2);
+  letter-spacing: 0.125rem;
   -webkit-background-clip: text;
   transition: all 0.2s;
 
