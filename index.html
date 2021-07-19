@@ -32,69 +32,105 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
+            <a
+              href="#"
+              role="link"
+              aria-label="Sobre a Natours"
+              class="navigation__link"
               ><span>01</span>Sobre a Natours</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
+            <a
+              href="#"
+              role="link"
+              aria-label="Seus Benefícios"
+              class="navigation__link"
               ><span>02</span>Seus Benefícios</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
+            <a
+              href="#"
+              role="link"
+              aria-label="Passeios Populares"
+              class="navigation__link"
               ><span>03</span>Passeios Populares</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span>Depoimentos</a>
+            <a
+              href="#"
+              role="link"
+              aria-label="Depoimentos"
+              class="navigation__link"
+              ><span>04</span>Depoimentos</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>05</span>Reserve Já</a>
+            <a
+              href="#"
+              role="link"
+              aria-label="Reserve Já"
+              class="navigation__link"
+              ><span>05</span>Reserve Já</a
+            >
           </li>
         </ul>
       </nav>
     </div>
 
     <!-- Header begins -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header__logo-box">
-        <a href="#">
-          <figure>
-            <img
-              src="assets/logo-branca.png"
-              class="header__logo"
-              alt="Logo branca"
-              title="Natours"
-              role="img"
-              aria-label="Logo branca"
-            /></figure
-        ></a>
+        <figure role="figure" aria-label="Logo branca">
+          <img
+            role="img"
+            src="assets/logo-branca.png"
+            class="header__logo"
+            alt="Logo branca"
+            title="Natours"
+            role="img"
+            aria-label="Logo branca"
+          />
+        </figure>
       </div>
 
       <div class="header__text-box">
-        <h1 class="heading-primary">
+        <h1 class="heading-primary" role="heading" aria-level="1">
           <span class="heading-primary--main">Ao ar livre</span>
           <span class="heading-primary--sub">É onde a vida acontece</span>
         </h1>
 
-        <a href="#section-tours" class="btn btn--white btn--animated"
+        <a
+          href="#section-tours"
+          role="link"
+          aria-label="Descubra nossos passeios"
+          class="btn btn--white btn--animated"
           >Descubra nossos passeios</a
         >
       </div>
     </header>
     <main>
       <!-- About section begins -->
-      <section class="section-about">
+      <section
+        class="section-about"
+        role="region"
+        aria-label="Seção Sobre a Empresa"
+      >
         <div class="u-center-text u-margin-bt-lg">
-          <h2 class="heading-secondary">
+          <h2 class="heading-secondary" role="heading" aria-level="2">
             Passeios emocionantes para pessoas aventureiras
           </h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bt-sm">
+            <h3
+              class="heading-tertiary u-margin-bt-sm"
+              role="heading"
+              aria-level="3"
+            >
               Você vai se apaixonar pela natureza
             </h3>
             <p class="paragraph">
@@ -104,7 +140,11 @@
               Voluptatum, eos.
             </p>
 
-            <h3 class="heading-tertiary u-margin-bt-sm">
+            <h3
+              class="heading-tertiary u-margin-bt-sm"
+              role="heading"
+              aria-level="3"
+            >
               Aventuras das quais você nunca viu antes
             </h3>
             <p class="paragraph">
@@ -114,11 +154,14 @@
               Dolorem deleniti quam eveniet enim.
             </p>
 
-            <a href="#" class="btn-text">Saiba mais &rarr;</a>
+            <a href="#" role="link" aria-label="Saiba Mais" class="btn-text"
+              >Saiba mais &rarr;</a
+            >
           </div>
           <div class="col-1-of-2">
             <div class="composition">
               <img
+                role="img"
                 srcset="
                   assets/natureza-1.jpg        300w,
                   assets/natureza-1-grande.jpg 100w
@@ -130,6 +173,7 @@
               />
 
               <img
+                role="img"
                 srcset="
                   assets/natureza-2.jpg        300w,
                   assets/natureza-2-grande.jpg 100w
@@ -141,6 +185,7 @@
               />
 
               <img
+                role="img"
                 srcset="
                   assets/natureza-3.jpg        300w,
                   assets/natureza-3-grande.jpg 100w
@@ -155,12 +200,22 @@
         </div>
       </section>
       <!-- Features Section begins -->
-      <section class="section-features">
+      <section
+        class="section-features"
+        role="region"
+        aria-label="Seção de Recursos"
+      >
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-world"></i>
-              <h3 class="heading-tertiary u-margin-bt-sm">Explore o mundo</h3>
+              <h3
+                class="heading-tertiary u-margin-bt-sm"
+                role="heading"
+                aria-level="3"
+              >
+                Explore o mundo
+              </h3>
               <p class="feature-box__text">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
                 error.
@@ -170,7 +225,11 @@
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-compass"></i>
-              <h3 class="heading-tertiary u-margin-bt-sm">
+              <h3
+                class="heading-tertiary u-margin-bt-sm"
+                role="heading"
+                aria-level="3"
+              >
                 Conheça a Natureza
               </h3>
               <p class="feature-box__text">
@@ -194,7 +253,11 @@
           <div class="col-1-of-4">
             <div class="feature-box">
               <i class="feature-box__icon icon-basic-heart"></i>
-              <h3 class="heading-tertiary u-margin-bt-sm">
+              <h3
+                class="heading-tertiary u-margin-bt-sm"
+                role="heading"
+                aria-level="3"
+              >
                 Viva uma vida saudável
               </h3>
               <p class="feature-box__text">
@@ -206,9 +269,16 @@
         </div>
       </section>
       <!-- Tours Section begins -->
-      <section class="section-tours" id="section-tours">
+      <section
+        class="section-tours"
+        id="section-tours"
+        role="region"
+        aria-label="Seção de Passeios"
+      >
         <div class="u-center-text u-margin-bt-lg">
-          <h2 class="heading-secondary">Passeios mais populares</h2>
+          <h2 class="heading-secondary" role="heading" aria-level="2">
+            Passeios mais populares
+          </h2>
         </div>
         <div class="row">
           <!-- First card -->
@@ -216,18 +286,28 @@
             <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--1">&nbsp;</div>
-                <h4 class="card__heading">
+                <h4 class="card__heading" role="heading" aria-level="4">
                   <span class="card__heading-span card__heading-span--1"
                     >O Explorador do Mar</span
                   >
                 </h4>
                 <div class="card__details">
-                  <ul>
-                    <li>3 dias de passeio</li>
-                    <li>Até 30 pessoas</li>
-                    <li>3 guias turísticos</li>
-                    <li>Hotéis aconchegantes</li>
-                    <li>Dificuldade: fácil</li>
+                  <ul role="presentation">
+                    <li role="listitem" aria-label="3 dias de passeio">
+                      3 dias de passeio
+                    </li>
+                    <li role="listitem" aria-label="Até 30 pessoas">
+                      Até 30 pessoas
+                    </li>
+                    <li role="listitem" aria-label="3 guias turísticos">
+                      3 guias turísticos
+                    </li>
+                    <li role="listitem" aria-label="Hotéis aconchegantes">
+                      Hotéis aconchegantes
+                    </li>
+                    <li role="listitem" aria-label="Dificuldade: fácil">
+                      Dificuldade: fácil
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -239,7 +319,13 @@
                       R$ 1499,<span class="card__price-value--cents">90</span>
                     </p>
                   </div>
-                  <a href="#popup" class="btn btn--white">Agende agora!</a>
+                  <a
+                    href="#popup"
+                    role="link"
+                    aria-label="Agende agora!"
+                    class="btn btn--white"
+                    >Agende agora!</a
+                  >
                 </div>
               </div>
             </div>
@@ -249,18 +335,28 @@
             <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--2">&nbsp;</div>
-                <h4 class="card__heading">
+                <h4 class="card__heading" role="heading" aria-level="4">
                   <span class="card__heading-span card__heading-span--2"
                     >O Caminhante da Floresta</span
                   >
                 </h4>
                 <div class="card__details">
-                  <ul>
-                    <li>7 dias de passeio</li>
-                    <li>Até 40 pessoas</li>
-                    <li>6 guias turísticos</li>
-                    <li>Fornecemos barracas</li>
-                    <li>Dificuldade: média</li>
+                  <ul role="presentation">
+                    <li role="listitem" aria-label="7 dias de passeio">
+                      7 dias de passeio
+                    </li>
+                    <li role="listitem" aria-label="Até 40 pessoas">
+                      Até 40 pessoas
+                    </li>
+                    <li role="listitem" aria-label="6 guias turísticos">
+                      6 guias turísticos
+                    </li>
+                    <li role="listitem" aria-label="Fornecemos barracas">
+                      Fornecemos barracas
+                    </li>
+                    <li role="listitem" aria-label="Dificuldade: média">
+                      Dificuldade: média
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -272,7 +368,13 @@
                       R$ 2499,<span class="card__price-value--cents">90</span>
                     </p>
                   </div>
-                  <a href="#popup" class="btn btn--white">Agende agora!</a>
+                  <a
+                    href="#popup"
+                    role="link"
+                    aria-label="Agende agora!"
+                    class="btn btn--white"
+                    >Agende agora!</a
+                  >
                 </div>
               </div>
             </div>
@@ -282,18 +384,28 @@
             <div class="card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--3">&nbsp;</div>
-                <h4 class="card__heading">
+                <h4 class="card__heading" role="heading" aria-level="3">
                   <span class="card__heading-span card__heading-span--3"
                     >O Aventureiro das Neves</span
                   >
                 </h4>
                 <div class="card__details">
-                  <ul>
-                    <li>5 dias de passeio</li>
-                    <li>Até 15 pessoas</li>
-                    <li>2 guias turísticos</li>
-                    <li>Fornecemos barracas</li>
-                    <li>Dificuldade: difícil</li>
+                  <ul role="presentation">
+                    <li role="listitem" aria-label="5 dias de passeio">
+                      5 dias de passeio
+                    </li>
+                    <li role="listitem" aria-label="Até 15 pessoas">
+                      Até 15 pessoas
+                    </li>
+                    <li role="listitem" aria-label="2 guias turísticos">
+                      2 guias turísticos
+                    </li>
+                    <li role="listitem" aria-label="Fornecemos barracas">
+                      Fornecemos barracas
+                    </li>
+                    <li role="listitem" aria-label="Dificuldade: difícil">
+                      Dificuldade: difícil
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -305,7 +417,13 @@
                       R$ 4549,<span class="card__price-value--cents">90</span>
                     </p>
                   </div>
-                  <a href="#popup" class="btn btn--white">Agende agora!</a>
+                  <a
+                    href="#popup"
+                    role="link"
+                    aria-label="Agende agora!"
+                    class="btn btn--white"
+                    >Agende agora!</a
+                  >
                 </div>
               </div>
             </div>
@@ -313,11 +431,21 @@
         </div>
 
         <div class="u-center-text u-margin-top-xlg">
-          <a href="#" class="btn btn--green">Descubra todos os passeios</a>
+          <a
+            href="#"
+            role="link"
+            aria-label="Descubra todos os passeios"
+            class="btn btn--green"
+            >Descubra todos os passeios</a
+          >
         </div>
       </section>
       <!-- Stories Section begins -->
-      <section class="section-stories">
+      <section
+        class="section-stories"
+        role="region"
+        aria-label="Seção de Depoimentos"
+      >
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="assets/video.mp4" type="video/mp4" />
@@ -326,7 +454,7 @@
           </video>
         </div>
         <div class="u-center-text u-margin-bt-lg">
-          <h2 class="heading-secondary">
+          <h2 class="heading-secondary" role="heading" aria-level="2">
             Nós realmente fazemos as pessoas felizes
           </h2>
         </div>
@@ -334,6 +462,7 @@
           <div class="story">
             <figure class="story__shape">
               <img
+                role="img"
                 src="assets/natureza-8.jpg"
                 alt="Pessoa que realizou um dos passeios"
                 class="story__img"
@@ -341,7 +470,11 @@
               <figcaption class="story__caption">Ana Cristina</figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bt-sm">
+              <h3
+                class="heading-tertiary u-margin-bt-sm"
+                role="heading"
+                aria-level="3"
+              >
                 Tive a melhor semana de todas com minha família
               </h3>
               <p>
@@ -360,6 +493,7 @@
           <div class="story">
             <figure class="story__shape">
               <img
+                role="img"
                 src="assets/natureza-9.jpg"
                 alt="Pessoa que realizou um dos passeios"
                 class="story__img"
@@ -367,7 +501,11 @@
               <figcaption class="story__caption">Douglas Oliveira</figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bt-sm">
+              <h3
+                class="heading-tertiary u-margin-bt-sm"
+                role="heading"
+                aria-level="3"
+              >
                 WOW! Minha vida está completamente diferente agora
               </h3>
               <p>
@@ -384,17 +522,29 @@
         </div>
 
         <div class="u-center-text u-margin-top-xlg">
-          <a href="#" class="btn-text">Leia mais relatos &rarr;</a>
+          <a
+            href="#"
+            role="link"
+            aria-label="Leia mais relatos"
+            class="btn-text"
+            >Leia mais relatos &rarr;</a
+          >
         </div>
       </section>
       <!-- Booking Section begins -->
-      <section class="section-book">
+      <section
+        class="section-book"
+        role="region"
+        aria-label="Seção de Reservas"
+      >
         <div class="row">
           <div class="book">
             <div class="book__form">
               <form action="#" class="form">
                 <div class="u-margin-bt-md">
-                  <h2 class="heading-secondary">Faça já a sua reserva!</h2>
+                  <h2 class="heading-secondary" role="heading" aria-level="2">
+                    Faça já a sua reserva!
+                  </h2>
                 </div>
                 <div class="form__group">
                   <input
@@ -402,6 +552,8 @@
                     id="full-name"
                     class="form__input"
                     placeholder="Nome completo"
+                    role="textbox"
+                    aria-label="Nome completo"
                     required
                   />
                   <label for="full-name" class="form__label"
@@ -414,6 +566,8 @@
                     id="email"
                     class="form__input"
                     placeholder="Endereço de email"
+                    role="textbox"
+                    aria-label="Endereço de email"
                     required
                   />
                   <label for="email" class="form__label">Email</label>
@@ -426,6 +580,7 @@
                       class="form__radio-input"
                       id="small"
                       name="size"
+                      role="radio"
                       hidden
                     />
                     <label for="small" class="form__radio-label">
@@ -439,6 +594,7 @@
                       class="form__radio-input"
                       id="large"
                       name="size"
+                      role="radio"
                       hidden
                     />
                     <label for="large" class="form__radio-label">
@@ -449,7 +605,13 @@
                 </div>
 
                 <div class="form__group">
-                  <button class="btn btn--green">Próximo passo &rarr;</button>
+                  <button
+                    class="btn btn--green"
+                    role="button"
+                    aria-label="Próximo passo"
+                  >
+                    Próximo passo &rarr;
+                  </button>
                 </div>
               </form>
             </div>
@@ -458,7 +620,7 @@
       </section>
     </main>
     <!-- Footer begins -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="footer__logo-box">
         <picture class="footer__logo">
           <source
@@ -469,6 +631,7 @@
             media="(max-width: 37.5em)"
           />
           <img
+            role="img"
             srcset="assets/logo-verde-1x.png 1x, assets/logo-verde-2x 2x.png"
             alt="Footer Logo"
             src="assets/logo-verde-2x"
@@ -480,19 +643,37 @@
           <div class="footer__nav">
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="" class="footer__link">Empresa</a>
+                <a href="" role="link" aria-label="Empresa" class="footer__link"
+                  >Empresa</a
+                >
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">Contato</a>
+                <a href="" role="link" aria-label="Contato" class="footer__link"
+                  >Contato</a
+                >
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">Trabalhe Conosco</a>
+                <a
+                  href=""
+                  role="link"
+                  aria-label="Trabalhe Conosco"
+                  class="footer__link"
+                  >Trabalhe Conosco</a
+                >
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">Política de Privacidade</a>
+                <a
+                  href=""
+                  role="link"
+                  aria-label="Política de Privacidade"
+                  class="footer__link"
+                  >Política de Privacidade</a
+                >
               </li>
               <li class="footer__item">
-                <a href="" class="footer__link">Termos</a>
+                <a href="" role="link" aria-label="termos" class="footer__link"
+                  >Termos</a
+                >
               </li>
             </ul>
           </div>
@@ -513,20 +694,32 @@
       <div class="popup__content">
         <div class="popup__left">
           <img
+            role="img"
             src="./assets/natureza-8.jpg"
             alt="Foto passeio"
             class="popup__img"
           />
           <img
+            role="img"
             src="./assets/natureza-9.jpg"
-            alt="Foto passeio"
+            alt="Foto passeio 2"
             class="popup__img"
           />
         </div>
         <div class="popup__right">
-          <a href="#section-tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bt-sm">Faça sua reserva já</h2>
-          <h3 class="heading-tertiary u-margin-bt-md">
+          <a href="#section-tours" role="link" class="popup__close">&times;</a>
+          <h2
+            class="heading-secondary u-margin-bt-sm"
+            role="heading"
+            aria-level="2"
+          >
+            Faça sua reserva já
+          </h2>
+          <h3
+            class="heading-tertiary u-margin-bt-md"
+            role="heading"
+            aria-level="3"
+          >
             Importante &ndash; por favor, leia estes termos antes de reservar
           </h3>
           <p class="popup__text u-margin-bt-md">
@@ -541,7 +734,9 @@
             nunc efficitur. Sed nec odio et ante accumsan gravida. Donec ut
             dolor ante. Ut ut leo eu sem blandit auctor at a eros.
           </p>
-          <a href="#" class="btn btn--green">Reserve já</a>
+          <a href="#" role="link" aria-label="Reserve Já" class="btn btn--green"
+            >Reserve já</a
+          >
         </div>
       </div>
     </div>
