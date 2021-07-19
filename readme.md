@@ -12,12 +12,58 @@
 ### Realizações
 
 - A melhor maneira de realizar um reset básico no *CSS*, utilizando o seletor universal `*`:
-<img alt="Demonstração de código reset" title="Demonstração de código reset" src="https://images4.imagebam.com/cb/ea/f5/ME25J9Q_o.png" />
+```css
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+```
 
 - Como estruturar as definições de fonte para todo o projeto:
-<img alt="Demonstração de código e estrutura para definições de fontes" title="Demonstração de código e estrutura para definições de fontes" src="https://images4.imagebam.com/14/ec/53/ME25JI3_o.png" />
+<img alt="Demonstração de código e estrutura para definições de fontes" title="Demonstração de código e estrutura para definições de fontes" src="https://images4.imagebam.com/14/ec/53/ME25JI3_o.png" height="200" />
 
 #### - Header
 - Como cortar partes de elementos utilizando `clip-path`:
-<img alt="Demonstração de código" title="Demonstração de código" src="https://images4.imagebam.com/58/04/6c/ME25JPG_o.png" />
-<img alt="Printscreen do resultado" title="Printscreen do resultado" src="https://images4.imagebam.com/42/c1/72/ME25JPI_o.png" />
+```css
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+```
+<img alt="Printscreen do resultado" title="Printscreen do resultado" src="https://images4.imagebam.com/42/c1/72/ME25JPI_o.png" height="250"/>
+
+- A maneira mais fácil de centralizar elementos com as propriedades `top` e `left` do `transform`:
+```css
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+```
+
+- Como criar animações *CSS* utilizando `@keyframes` e a propriedade `animation`:
+```scss
+@mixin moveInX($direction, $initX, $midX, $finalX) {
+  @keyframes moveIn#{$direction} {
+    0% {
+      opacity: 0;
+      transform: translateX($initX);
+    }
+
+    80% {
+      transform: translateX($midX);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX($finalX);
+    }
+  }
+}
+```
+
+```css
+animation: moveInRight 1s ease-out;
+```
+<img alt="Gif do resultado" title="Gif do resultado" src="https://media.giphy.com/media/onegSI78u3s0U0TLzF/giphy.gif" />
+
+
